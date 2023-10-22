@@ -2,6 +2,8 @@
 The PhotoLabs project for the Web Development React course programming.
 
 # Photolabs
+!["Screenshot"](https://github.com/Nirakone/photolabs-starter/blob/main/photolabspreview.png)
+
 
 ## Setup
 
