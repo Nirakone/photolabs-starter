@@ -1,6 +1,6 @@
 .photo-list__item {
   margin: 24px;
-  padding: 8px;
+  padding: 16px 16px 16px 16px;
   border-width: 0.5px;
   border-color: lightgray;
   border-style: solid;
@@ -21,6 +21,7 @@
   width: 300px;
   height: 200px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .photo-list__user-profile {
