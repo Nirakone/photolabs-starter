@@ -2,10 +2,24 @@ import React from 'react';
 
 import '../styles/HomeRoute.scss';
 
-const HomeRoute = () => {
+import TopNavigation from 'components/TopNavigationBar';
+import PhotoList from 'components/PhotoList';
+
+const HomeRoute = (props) => {
   return (
     <div className="home-route">
-      {/* Insert React */}
+      <TopNavigation
+        topics={props.topics}
+        toggleNotification={props.toggleNotification}
+        getPhotosOfTopic={props.getPhotosOfTopic}
+      />
+      <PhotoList
+        photos={props.photos}
+        favorites={props.favorites}
+        toggleFavorite={props.toggleFavorite}
+        clickedPhoto={props.clickedPhoto}
+        toggleModal={props.toggleModal}
+      />
     </div>
   );
 };
