@@ -3,7 +3,7 @@ import React, { useCallback, useState, useEffect } from 'react';
 import FavIcon from './FavIcon';
 import '../styles/PhotoFavButton.scss';
 
-function PhotoFavButton(props) {
+const PhotoFavButton = (props) => {
   const { selected, onClick } = props;
   return (
     <div className="photo-list__fav-icon" data-attr-photoid={props.photoID}>
@@ -14,6 +14,6 @@ function PhotoFavButton(props) {
       </div>
     </div>
   );
-}
+};
 
 export default PhotoFavButton;
