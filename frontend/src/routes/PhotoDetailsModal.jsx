@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import '../styles/PhotoDetailsModal.scss';
 import "../styles/PhotoListItem.scss";
@@ -8,7 +8,8 @@ import PhotoFavButton from 'components/PhotoFavButton';
 
 const PhotoDetailsModal = (props) => {
   const { clickedPhoto, toggleModal, favorites, toggleFavorite } = props;
-  const similarphotos = Object.values(clickedPhoto[0].similarphotos);
+  console.log('testing', clickedPhoto[0], clickedPhoto);
+  const similarphotos = (clickedPhoto[0].similar_photos);
 
   return (
     <div className="photo-details-modal">
